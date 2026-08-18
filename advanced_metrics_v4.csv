@@ -1,0 +1,9 @@
+Metric,Value,Interpretation
+AUC-ROC,0.992718,"1.0 = perfect, 0.5 = chance"
+AUC-PR,0.993744,Better than ROC under class imbalance
+d-prime,3.2667,>3 = excellent separation
+EER (%),4.1253,Lower = better; biometric standard
+EER threshold,0.0000,Threshold where FAR == FRR
+Separation gap,-0.9999,min(genuine) - max(impostor); >0 = linearly separable
+Genuine count,2024,
+Impostor count,1976,

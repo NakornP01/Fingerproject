@@ -1,0 +1,7 @@
+Method,Threshold,TP,TN,FP,FN,Accuracy,FAR,FRR,Precision,Recall,F1,Recommendation
+1. EER (balanced),0.0000,1941,1894,82,83,0.9587,0.0415,0.0410,0.9595,0.9590,0.9592,Point where FAR == FRR
+2. Youden's J (max TPR-FPR),0.0000,1917,1929,47,107,0.9615,0.0238,0.0529,0.9761,0.9471,0.9614,Maximizes separation; rewards both correctness
+3. F1-max,0.0010,1846,1962,14,178,0.9520,0.0071,0.0879,0.9925,0.9121,0.9506,Best harmonic mean of Precision & Recall
+4. Fixed FAR = 0.1%,0.9976,1458,1974,2,566,0.8580,0.0010,0.2796,0.9986,0.7204,0.8370,Industry operating-point pick (phone unlock)
+"5. Cost-sensitive (C_FA=100, C_FR=1)",0.0562,1756,1974,2,268,0.9325,0.0010,0.1324,0.9989,0.8676,0.9286,Security-weighted; FAR is 100x more costly
+(current default 0.70),0.7000,1657,1974,2,367,0.9077,0.0010,0.1813,0.9988,0.8187,0.8998,Reference

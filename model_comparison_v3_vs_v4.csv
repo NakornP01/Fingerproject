@@ -1,0 +1,6 @@
+Metric,v3 (disjoint),v4 (disjoint + hard-neg + aug)
+AUC,1.0000,0.9927
+EER (%),0.05,4.13
+Accuracy@0.70 (%),99.30,90.77
+FAR@0.70 (%),0.00,0.10
+FRR@0.70 (%),1.38,18.13
